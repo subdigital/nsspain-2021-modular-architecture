@@ -1,0 +1,16 @@
+PODS:
+  - DataFlow (0.0.1)
+
+DEPENDENCIES:
+  - DataFlow (from `./`)
+
+EXTERNAL SOURCES:
+  DataFlow:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  DataFlow: 036af8e7d82901204eead0eb5311511e54bbb10b
+
+PODFILE CHECKSUM: 37360a4d73dba588145255977823cc3985f4b45f
+
+COCOAPODS: 1.11.2

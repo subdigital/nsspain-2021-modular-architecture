@@ -1,0 +1,11 @@
+platform :ios, '15.0'
+
+abstract_target 'EpisodeListFeature' do
+  pod 'Models', path: '../Models'
+  pod 'Networking', path: '../Networking'
+  pod 'DataFlow', path: '../DataFlow'
+  pod 'EpisodeListFeature', path: './'
+  
+  target 'Demo'
+  target 'Tests'
+end

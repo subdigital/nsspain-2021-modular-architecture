@@ -1,0 +1,38 @@
+name: EpisodeListFeature
+
+options:
+  bundleIdPrefix: com.nsspain.modular-project-architecture
+  postGenCommand: pod install
+
+schemes:
+  Demo:
+    build:
+      targets:
+        Demo: all
+    test:
+      targets:
+        - Tests
+  Tests:
+    build:
+      targets:
+        Tests: all
+    test:
+      targets:
+        - Tests
+
+targets:
+  Demo:
+    type: application
+    platform: iOS
+    deploymentTarget: 15.0
+    sources: [Demo/Demo]
+    info:
+      path: Demo/Info.plist
+  Tests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: 15.0
+    sources: [Tests]
+    info:
+      path: Tests/Info.plist
+    

@@ -1,0 +1,35 @@
+PODS:
+  - DataFlow (0.0.1)
+  - Models (0.0.1)
+  - Networking (0.0.1):
+    - Models
+  - SeriesListFeature (0.0.1):
+    - DataFlow
+    - Models
+    - Networking
+
+DEPENDENCIES:
+  - DataFlow (from `../DataFlow`)
+  - Models (from `../Models`)
+  - Networking (from `../Networking`)
+  - SeriesListFeature (from `./`)
+
+EXTERNAL SOURCES:
+  DataFlow:
+    :path: "../DataFlow"
+  Models:
+    :path: "../Models"
+  Networking:
+    :path: "../Networking"
+  SeriesListFeature:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  DataFlow: 036af8e7d82901204eead0eb5311511e54bbb10b
+  Models: e3d378a943227543e281cf057e86e510f2b97f3b
+  Networking: 8f688e031d10559aa47bd1113bd1c06fe9328c77
+  SeriesListFeature: 771e7535cce614cbf95d4d92d1d37646d35d5151
+
+PODFILE CHECKSUM: f0fbe9b98928bfe5f8b64a2b45bababbe171045d
+
+COCOAPODS: 1.11.2

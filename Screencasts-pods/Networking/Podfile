@@ -1,0 +1,6 @@
+platform :ios, '15.0'
+
+target 'Tests' do
+  pod 'Models', path: '../Models'
+  pod 'Networking', path: './'
+end

@@ -1,0 +1,35 @@
+PODS:
+  - DataFlow (0.0.1)
+  - EpisodeListFeature (0.0.1):
+    - DataFlow
+    - Models
+    - Networking
+  - Models (0.0.1)
+  - Networking (0.0.1):
+    - Models
+
+DEPENDENCIES:
+  - DataFlow (from `../DataFlow`)
+  - EpisodeListFeature (from `./`)
+  - Models (from `../Models`)
+  - Networking (from `../Networking`)
+
+EXTERNAL SOURCES:
+  DataFlow:
+    :path: "../DataFlow"
+  EpisodeListFeature:
+    :path: "./"
+  Models:
+    :path: "../Models"
+  Networking:
+    :path: "../Networking"
+
+SPEC CHECKSUMS:
+  DataFlow: 036af8e7d82901204eead0eb5311511e54bbb10b
+  EpisodeListFeature: 3f051835a97c0db66f0e2c646eaa8e4a35bbfabd
+  Models: e3d378a943227543e281cf057e86e510f2b97f3b
+  Networking: 8f688e031d10559aa47bd1113bd1c06fe9328c77
+
+PODFILE CHECKSUM: c48fee7c250daf7d609ae9f428638572ec340e68
+
+COCOAPODS: 1.11.2

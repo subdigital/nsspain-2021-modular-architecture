@@ -1,0 +1,24 @@
+name: DataFlow
+
+options:
+  bundleIdPrefix: com.nsspain.modular-project-architecture
+  postGenCommand: pod install
+
+schemes:
+  Tests:
+    build:
+      targets:
+        Tests: all
+    test:
+      targets:
+        - Tests
+
+targets:
+  Tests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: 15.0
+    sources: [Tests]
+    info:
+      path: Tests/Info.plist
+    
